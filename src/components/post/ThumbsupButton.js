@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import MyButton from '../../util/MyButton';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// ICONS
-import ThumbUpOffAltIcon from '@material-ui/icons/ThumbUpAltOutlined';
+
+//Reusable Component
+import MyButton from '../../util/MyButton';
+
+// MUI ICONS
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ThumbUpOffAltIcon from '@material-ui/icons/ThumbUpAltOutlined';
+
 // REDUX
 import { connect } from 'react-redux';
 import { thumbsUpPost, removeThumbsUpPost } from '../../redux/actions/dataActions';

@@ -1,16 +1,23 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
-import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
-// MUI
-import MuiLink from '@material-ui/core/Link';
+
+
+//MUI Style
+import withStyles from '@material-ui/core/styles/withStyles';
+
+// MUI components
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-// Icons
+import MuiLink from '@material-ui/core/Link';
+
+// MUI Icons
+import CalendarToday from '@material-ui/icons/CalendarToday';
 import LocationOn from '@material-ui/icons/LocationOn';
 import LinkIcon from '@material-ui/icons/Link';
-import CalendarToday from '@material-ui/icons/CalendarToday';
+
+//other Npm Packages
+import dayjs from 'dayjs';
 
 const styles = (theme) => ({
   ...theme

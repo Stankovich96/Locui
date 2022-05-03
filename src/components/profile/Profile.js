@@ -1,25 +1,34 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
 import { Link } from 'react-router-dom';
-import dayjs from 'dayjs';
-import EditDetails from './EditDetails';
+
+//MUI Styles
+import withStyles from '@material-ui/core/styles/withStyles';
+
+//Reusable components
 import MyButton from '../../util/MyButton';
 import ProfileSkeleton from '../../util/ProfileSkeleton';
-// MUI stuff
+import EditDetails from './EditDetails';
+
+// MUI component
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import MuiLink from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
-// Icons
+import MuiLink from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+
+// MUI Icons
 import LocationOn from '@material-ui/icons/LocationOn';
-import LinkIcon from '@material-ui/icons/Link';
+import Logout from '@material-ui/icons/ExitToAppOutlined';
 import CalendarToday from '@material-ui/icons/CalendarToday';
 import EditIcon from '@material-ui/icons/Edit';
-import Logout from '@material-ui/icons/ExitToAppOutlined';
+import LinkIcon from '@material-ui/icons/Link';
+
 //Redux
 import { connect } from 'react-redux';
 import { logoutUser, uploadImage } from '../../redux/actions/userActions';
+
+//Other Npm Packages
+import dayjs from 'dayjs';
 
 const styles = (theme) => ({
   ...theme

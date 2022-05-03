@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
+//MUI Styles
 import withStyles from '@material-ui/core/styles/withStyles';
+
 // MUI Stuff
 import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+
 // Redux stuff
 import { connect } from 'react-redux';
 import { submitComment } from '../../redux/actions/dataActions';

@@ -14,10 +14,10 @@ import Navbar from './components/layout/Navbar';
 import themeObject from './util/theme';
 import AuthRoute from './util/AuthRoute';
 // Pages
-import home from './pages/home';
-import login from './pages/login';
-import signup from './pages/signup';
-import user from './pages/user';
+import home from './pageViews/home';
+import login from './pageViews/login';
+import signup from './pageViews/signup';
+import user from './pageViews/user';
 
 import axios from 'axios';
 

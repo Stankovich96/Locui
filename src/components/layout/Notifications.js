@@ -1,23 +1,27 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
 import PropTypes from 'prop-types';
+
 // MUI stuff
-import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import IconButton from '@material-ui/core/IconButton';
+import Badge from '@material-ui/core/Badge';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
-import Badge from '@material-ui/core/Badge';
-// Icons
-import NotificationsIcon from '@material-ui/icons/NotificationsActiveSharp';
-import ThumbsUpIcon from '@material-ui/icons/ThumbUp';
+import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
+
+// MUI Icons
 import ChatIcon from '@material-ui/icons/Chat';
+import ThumbsUpIcon from '@material-ui/icons/ThumbUp';
+import NotificationsIcon from '@material-ui/icons/NotificationsActiveSharp';
+
 // Redux
 import { connect } from 'react-redux';
 import { markNotificationsRead } from '../../redux/actions/userActions';
 
+//Other Npm Packages
+import relativeTime from 'dayjs/plugin/relativeTime';
+import dayjs from 'dayjs';
 class Notifications extends Component {
   state = {
     anchorEl: null

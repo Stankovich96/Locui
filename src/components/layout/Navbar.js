@@ -1,17 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import MyButton from '../../util/MyButton';
-import CreatePost from '../post/CreatePost';
+
+//Reusable Component
 import Notifications from './Notifications';
+import CreatePost from '../post/CreatePost';
+import MyButton from '../../util/MyButton';
+
 // MUI stuff
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-// Icons
+import Toolbar from '@material-ui/core/Toolbar';
+import AppBar from '@material-ui/core/AppBar';
+
+// MUI Icons
 import HomeIcon from '@material-ui/icons/Home';
 
+//REDUX
+import { connect } from 'react-redux';
 class Navbar extends Component {
   render() {
     const { authenticated } = this.props;

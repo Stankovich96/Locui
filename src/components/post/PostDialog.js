@@ -1,25 +1,34 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
-import MyButton from '../../util/MyButton';
-import LikeButton from './ThumbsupButton';
-import Comments from './Comments';
-import CommentForm from './CommentForm';
-import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
-// MUI Stuff
-import Dialog from '@material-ui/core/Dialog';
-import DialogContent from '@material-ui/core/DialogContent';
-import CircularProgress from '@material-ui/core/CircularProgress';
+
+//MUI Styles
+import withStyles from '@material-ui/core/styles/withStyles';
+
+//Reusable Component
+import ThumbsupButton from './ThumbsupButton';
+import MyButton from '../../util/MyButton';
+import Comments from '../comment/Comments';
+import CommentForm from '../comment/CommentForm';
+
+// MUI components
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-// Icons
-import CloseIcon from '@material-ui/icons/Close';
-import UnfoldMore from '@material-ui/icons/UnfoldMore';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import DialogContent from '@material-ui/core/DialogContent';
+import Dialog from '@material-ui/core/Dialog';
+
+// MUI Icons
 import ChatIcon from '@material-ui/icons/Chat';
-// Redux stuff
+import UnfoldMore from '@material-ui/icons/UnfoldMore';
+import CloseIcon from '@material-ui/icons/Close';
+
+// Redux 
 import { connect } from 'react-redux';
 import { getPost, clearErrors } from '../../redux/actions/dataActions';
+
+//other Npm Packages used
+import dayjs from 'dayjs'
 
 const styles = (theme) => ({
   ...theme,
@@ -117,7 +126,7 @@ class PostDialog extends Component {
           </Typography>
           <hr className={classes.invisibleSeparator} />
           <Typography variant="body1">{body}</Typography>
-          <LikeButton postId={postId} />
+          <ThumbsupButton postId={postId} />
           <span>{thumbsUpCount} thumbsup</span>
           <MyButton tip="comments">
             <ChatIcon color="primary" />

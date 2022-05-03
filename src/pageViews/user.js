@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import axios from 'axios';
-import Post from '../components/post/Post';
-import StaticProfile from '../components/profile/StaticProfile';
-import Grid from '@material-ui/core/Grid';
 
+
+//Reusable component
 import PostSkeleton from '../util/PostSkeleton';
+import StaticProfile from '../components/profile/StaticProfile';
+import Post from '../components/post/Post';
 import ProfileSkeleton from '../util/ProfileSkeleton';
 
+//MUI component
+import Grid from '@material-ui/core/Grid';
+
+//Redux
 import { connect } from 'react-redux';
 import { getUserData } from '../redux/actions/dataActions';
 
+//Other Npm Packages
+import axios from 'axios';
 class user extends Component {
   state = {
-    profile: null,
-    postIdParam: null
+    postIdParam: null,
+    profile: null
   };
   componentDidMount() {
-    const username = this.props.match.params.username;
     const postId = this.props.match.params.postId;
+    const username = this.props.match.params.username;
 
     if (postId) this.setState({ postIdParam: postId });
 
@@ -67,14 +73,15 @@ class user extends Component {
   }
 }
 
-user.propTypes = {
-  getUserData: PropTypes.func.isRequired,
-  data: PropTypes.object.isRequired
-};
-
 const mapStateToProps = (state) => ({
   data: state.data
 });
+
+user.propTypes = {
+  data: PropTypes.object.isRequired,
+  getUserData: PropTypes.func.isRequired
+};
+
 
 export default connect(
   mapStateToProps,
