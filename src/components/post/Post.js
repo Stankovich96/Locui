@@ -9,7 +9,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import ThumbsupButton from './ThumbsupButton';
 import DeletePost from './DeletePost';
 import PostDialog from './PostDialog';
-import MyButton from '../../util/MyButton';
+import MyButton from '../../utility/MyButton';
 
 // MUI Component
 import Card from '@material-ui/core/Card';

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 //Reusable components
-import MyButton from '../../util/MyButton';
-import ProfileSkeleton from '../../util/ProfileSkeleton';
+import MyButton from '../../utility/MyButton';
+import ProfileSkeleton from '../../utility/ProfileSkeleton';
 import EditDetails from './EditDetails';
 
 // MUI component

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 //Reusable components
-import MyButton from '../../util/MyButton';
+import MyButton from '../../utility/MyButton';
 
 // MUI components
 import DialogContent from '@material-ui/core/DialogContent';

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 //Reusable Components
 import Post from '../components/post/Post';
 import Profile from '../components/profile/Profile';
-import PostSkeleton from '../util/PostSkeleton';
+import PostSkeleton from '../utility/PostSkeleton';
 
 //MUI components
 import Grid from '@material-ui/core/Grid';

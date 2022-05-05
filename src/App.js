@@ -11,8 +11,8 @@ import { SET_AUTHENTICATED } from './redux/types';
 import { logoutUser, getUserData } from './redux/actions/userActions';
 // Components
 import Navbar from './components/layout/Navbar';
-import themeObject from './util/theme';
-import AuthRoute from './util/AuthRoute';
+import themeObject from './utility/theme';
+import AuthRoute from './utility/AuthRoute';
 // Pages
 import home from './pageViews/home';
 import login from './pageViews/login';

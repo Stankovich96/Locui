@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 //Reusable Component
 import Notifications from './Notifications';
 import CreatePost from '../post/CreatePost';
-import MyButton from '../../util/MyButton';
+import MyButton from '../../utility/MyButton';
 
 // MUI stuff
 import Button from '@material-ui/core/Button';

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 //Reusable Component
-import MyButton from '../../util/MyButton';
+import MyButton from '../../utility/MyButton';
 
 // MUI ICONS
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';

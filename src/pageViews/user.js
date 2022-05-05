@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 
 //Reusable component
-import PostSkeleton from '../util/PostSkeleton';
+import PostSkeleton from '../utility/PostSkeleton';
 import StaticProfile from '../components/profile/StaticProfile';
 import Post from '../components/post/Post';
-import ProfileSkeleton from '../util/ProfileSkeleton';
+import ProfileSkeleton from '../utility/ProfileSkeleton';
 
 //MUI component
 import Grid from '@material-ui/core/Grid';

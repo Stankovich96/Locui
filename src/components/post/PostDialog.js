@@ -7,7 +7,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 //Reusable Component
 import ThumbsupButton from './ThumbsupButton';
-import MyButton from '../../util/MyButton';
+import MyButton from '../../utility/MyButton';
 import Comments from '../comment/Comments';
 import CommentForm from '../comment/CommentForm';
 
